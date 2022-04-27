@@ -1,0 +1,3 @@
+The Devil Room pool is the pool of items that can be found in the Devil Room Devil Room. All items can be bought for some number of Red Heart containers. If Isaac has no Red Heart containers, items can be bought for three Soul Heart Soul Hearts / Black Heart Black Hearts. Added in Repentance Occasionally, items may cost Soul Hearts even if Isaac still has Red Hearts.
+
+Any items outside of the Devil Room item pool will have a price of 1 Red Heart or 3 Soul Hearts/Black Hearts. This can be caused either by obtaining Added in AfterbirthChaos Chaos or exhausting the item pool, making Breakfast Breakfast appear.

@@ -25,7 +25,7 @@ def get_top_five_words(filename):
     # Pegando as 5 palavras mais frequentes
     top_five_words = []
 
-    for i in range(5):
+    for i in range(min(5, len(word_to_count))):
         top_word = None
         top_count = 0
 
@@ -62,11 +62,13 @@ while True:
 
   # Se a mensagem não for uma string, vamos retornar uma lista vazia
   if type(filename) != str:
-      connection.sendall(pickle.loads([]))
+      connection.sendall(pickle.dumps([]))
+      continue
 
   # Se o diretório do arquivo não existir, também vamos retornar uma lista vazia
   if not os.path.exists(filename + '.txt'):
-      connection.sendall(pickle.loads([]))
+      connection.sendall(pickle.dumps([]))
+      continue
 
   # Caso nada tenha dado errado, vamos retonar as 5 palavras mais frequentes
   connection.sendall(pickle.dumps(get_top_five_words(filename)))

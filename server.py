@@ -50,7 +50,7 @@ server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((HOST, PORT))
 server.listen(6)
 
-print('Server started. Listening to connections on port 5000.')
+print(f'Server started. Listening to connections on port {PORT}.')
 
 connection, address = server.accept()
 while True:
